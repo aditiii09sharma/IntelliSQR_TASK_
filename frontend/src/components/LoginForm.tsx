@@ -17,7 +17,7 @@ export default function LoginForm() {
     handleSubmit,
     formState: { errors },
   } = useForm<LoginFormData>({
-    resolver: zodResolver(schema),
+    resolver:  zodResolver(schema),
   });
 
   const onSubmit = async (data: LoginFormData) => {
